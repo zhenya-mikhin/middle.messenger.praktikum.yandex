@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./src/styles/index.scss">
+		<link rel="stylesheet" href="./src/styles/initial.scss">
+		<title>Like Telegram</title>
+	</head>
+	<body class="initial-body">
+		<form class="initial-form">
+			<h2>Вход</h2>
+
+			{{> input/input type="login" placeholder="Логин" }}
+			{{> input/input type="password" placeholder="Пароль" }}
+
+			{{> button/button text="Авторизоваться" mode="sign-in" }}
+			<a class="initial-link" href="./src/pages/sign-up/sign-up.hbs">Нет аккаунта?</a>
+		</form>
+
+		<nav class="navigation">
+			<a href="index.hbs">Аторизация</a>
+			<a href="./src/pages/sign-up/sign-up.hbs">Регистрация</a>
+			<a href="./src/pages/errors/404.hbs">Страница 404</a>
+			<a href="./src/pages/errors/server-error.hbs">Ошибка сервера</a>
+			<a href="./src/pages/main/main.hbs">Чаты</a>
+			<a href="./src/pages/profile/profile.hbs">Профиль</a>
+			<a href="./src/pages/profile/set-profile.hbs">Изменить профиль</a>
+			<a href="./src/pages/profile/set-password.hbs">Изменить пароль</a>
+			<a href="./src/pages/modals/modals.hbs">Модалки</a>
+		</nav>
+	</body>
+</html>
