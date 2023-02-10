@@ -1,0 +1,32 @@
+@import './mixins.scss/hover-and-active.scss';
+
+.initial-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.initial-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+	border-radius: 12px;
+
+	max-width: 340px;
+	width: 100%;
+	padding: 30px;
+	padding-top: 50px;
+	text-align: center;
+
+	h2 {
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	.initial-link {
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.input-row {
+	position: relative;
+	transition: all 0.3s;
+	width: 100%;
+	height: 52px;
+	font-size: 13px;
+	line-height: 13px;
+
+	.main-input {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		width: 100%;
+		height: 25px;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid #3369F3;
+
+		&::placeholder {
+			color: transparent;
+		}
+
+		&:focus + .label-text,
+		&:not(:placeholder-shown) + .label-text {
+			transform: translateY(-20px);
+			font-size: 9px;
+		}
+	}
+
+	.label-text {
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		z-index: 2;
+		color: $gray-text-color;
+	}
+
+	.invalid-text {
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		font-size: 8px;
+		color: #FF2F2F;
+	}
+}

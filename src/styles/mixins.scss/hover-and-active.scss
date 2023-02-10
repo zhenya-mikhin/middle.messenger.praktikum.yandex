@@ -1,0 +1,8 @@
+@mixin hover-and-active {
+	&:hover {
+		filter: brightness(85%);
+	}
+	&:active {
+		filter: brightness(65%);
+	}
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import './variables.scss';
+@import '../components/input/input.scss';
+@import '../components/profile-input/profile-input.scss';
+@import '../components/button/button.scss';
+@import '../components/chat-item/chat-item.scss';
+@import '../components/project-navigation/project-navigation.scss';
+@import '../components/modals/modal.scss';
+
+* {
+	box-sizing: border-box;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	margin: 0;
+}
+
+a {
+	font-size: 11px;
+	line-height: 11px;
+	text-decoration: none;
+	color: $primary-color;
+}

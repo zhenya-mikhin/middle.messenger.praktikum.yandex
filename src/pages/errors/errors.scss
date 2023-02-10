@@ -1,0 +1,16 @@
+.error-body {
+	flex-direction: column;
+
+	.error-type {
+		font-size: 40px;
+		line-height: 40px;
+		color: #1E1E1E;
+		margin-bottom: 20px;
+	}
+	.error-text {
+		font-size: 20px;
+		line-height: 20px;
+		color: #1E1E1E;
+		margin-bottom: 70px;
+	}
+}

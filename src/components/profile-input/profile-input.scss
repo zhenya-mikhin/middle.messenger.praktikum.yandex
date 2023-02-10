@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.profile-input-row {
+	position: relative;
+	transition: all 0.3s;
+	height: 33px;
+	width: 100%;
+	font-size: 13px;
+	line-height: 13px;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $gray-color;
+	}
+
+	.profile-input {
+		width: 100%;
+		height: 100%;
+		border: none;
+		outline: none;
+		text-align: end;
+		color: $gray-text-color;
+
+		&::placeholder {
+			color: transparent;
+		}
+	}
+
+	.label-text {
+		position: absolute;
+		top: 13px;
+		left: 0;
+		color: $dark-text-color;
+	}
+
+	.invalid-text {
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		font-size: 8px;
+		color: #FF2F2F;
+	}
+}
