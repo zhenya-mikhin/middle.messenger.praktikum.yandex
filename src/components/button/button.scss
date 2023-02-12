@@ -1,3 +1,4 @@
+@import '../../styles/variables.scss';
 @import '../../styles/mixins.scss/hover-and-active.scss';
 
 .button {
@@ -8,24 +9,11 @@
 	width: 100%;
 	height: 37px;
 	margin-bottom: 14px;
-	background: #3369F3;
+	background: $primary-color;
 	border: none;
 	border-radius: 8px;
 	color: #fff;
 	cursor: pointer;
 
 	@include hover-and-active;
-
-	&.sign-in {
-		margin-top: 159px;
-	}
-	&.sign-up {
-		margin-top: 42px;
-	}
-	&.save {
-		margin-top: 60px;
-	}
-	&.modal {
-		margin-top: 33px;
-	}
 }

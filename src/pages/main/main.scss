@@ -14,7 +14,7 @@
 		border-right: 1px solid $gray-color;
 		background: #FBFBFB;
 
-		header {
+		.nav-header {
 			display: grid;
 			grid-template-rows: 1fr 32px;
 			padding-bottom: 14px;
@@ -119,7 +119,7 @@
 				border: 1px solid $gray-color;
 			}
 
-			div {
+			.avatar-container {
 				display: flex;
 				align-items: center;
 				gap: 10px;

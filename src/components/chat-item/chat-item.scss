@@ -1,9 +1,9 @@
 @import '../../styles/variables.scss';
 
-.chats-item {
+.chats-item-container {
 	position: relative;
 
-	button {
+	.chats-item {
 		display: grid;
 		gap: 10px;
 		grid-template-columns: 47px 1fr;
