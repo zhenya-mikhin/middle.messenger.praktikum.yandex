@@ -1,27 +1,19 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../../styles/index.scss">
-		<link rel="stylesheet" href="../../styles/initial.scss">
-		<title>Like Telegram</title>
-	</head>
-	<body class="initial-body">
-		<form class="initial-form">
-			<h2>Регистрация</h2>
+{{!< layout}}
 
-			{{> input/input type="email" placeholder="Почта" }}
-			{{> input/input type="login" placeholder="Логин" }}
-			{{> input/input type="text" placeholder="Имя" }}
-			{{> input/input type="text" placeholder="Фамилия" }}
-			{{> input/input type="tel" placeholder="Телефон" }}
-			{{> input/input type="password" placeholder="Пароль" }}
-			{{> input/input type="password" placeholder="Пароль (ещё раз)" }}
+<link rel="stylesheet" href="../../styles/initial.scss">
+<section class="initial-body">
+	<form class="initial-form">
+		<h2>Регистрация</h2>
 
-			{{> button/button text="Зарегистрироваться" mode="sign-up" }}
-			<a class="initial-link" href="../../../index.hbs">Войти</a>
-		</form>
-		{{> project-navigation/project-navigation }}
-	</body>
-</html>
+		{{> input/input type="email" placeholder="Почта" }}
+		{{> input/input type="login" placeholder="Логин" }}
+		{{> input/input type="text" placeholder="Имя" }}
+		{{> input/input type="text" placeholder="Фамилия" }}
+		{{> input/input type="tel" placeholder="Телефон" }}
+		{{> input/input type="password" placeholder="Пароль" }}
+		{{> input/input type="password" placeholder="Пароль (ещё раз)" }}
+
+		{{> button/button text="Зарегистрироваться" mode="sign-up" }}
+		<a class="initial-link" href="../sign-in/sign-in.hbs">Войти</a>
+	</form>
+</section>

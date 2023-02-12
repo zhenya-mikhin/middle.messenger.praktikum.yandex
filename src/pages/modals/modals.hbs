@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../../styles/index.scss">
-		<title>Like Telegram</title>
-	</head>
-	<body class="modals-body">
-		{{> modals/add-or-delete-user optionName="Добавить" }}
-		{{> modals/add-or-delete-user optionName="Удалить" }}
-		{{> modals/upload-file title="Загрузите файл" }}
-		{{> project-navigation/project-navigation }}
-	</body>
-</html>
+{{!< layout}}
+
+<section class="modals-body">
+	{{> modals/add-or-delete-user optionName="Добавить" }}
+	{{> modals/add-or-delete-user optionName="Удалить" }}
+	{{> modals/upload-file title="Загрузите файл" }}
+	{{> project-navigation/project-navigation }}
+</section>

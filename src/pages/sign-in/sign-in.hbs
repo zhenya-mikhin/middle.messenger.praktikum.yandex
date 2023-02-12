@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="ru">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../../styles/index.scss">
-		<link rel="stylesheet" href="../../styles/initial.scss">
-		<title>Like Telegram</title>
-	</head>
-	<body class="initial-body">
-		<form class="initial-form">
-			<h2>Вход</h2>
+{{!< layout}}
 
-			{{> input/input type="login" placeholder="Логин" }}
-			{{> input/input type="password" placeholder="Пароль" }}
+<link rel="stylesheet" href="../../styles/initial.scss">
+<section class="initial-body">
+	<form class="initial-form">
+		<h2>Вход</h2>
 
-			{{> button/button text="Авторизоваться" mode="sign-in" }}
-			<a class="initial-link" href="../sign-up/sign-up.hbs">Нет аккаунта?</a>
-		</form>
-		{{> project-navigation/project-navigation }}
-	</body>
-</html>
+		{{> input/input type="login" placeholder="Логин" }}
+		{{> input/input type="password" placeholder="Пароль" }}
+
+		{{> button/button text="Авторизоваться" mode="sign-in" }}
+		<a class="initial-link" href="../sign-up/sign-up.hbs">Нет аккаунта?</a>
+	</form>
+</section>
