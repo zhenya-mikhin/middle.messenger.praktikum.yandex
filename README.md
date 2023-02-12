@@ -9,10 +9,6 @@
 - `npm start` — запуск версии для разработчика,
 - `npm run build:prod` — сборка стабильной версии.
 
-### **Примеры README**
+## Ссыдка на Netlify
 
-- «[Реакт](https://github.com/facebook/react)»,
-- «[Эхо](https://github.com/labstack/echo)»,
-- «[Вебпак](https://github.com/webpack/webpack)»,
-- «[ТДенгине](https://github.com/taosdata/TDengine)»,
-- «[Соул-хантинг](https://github.com/vladpereskokov/soul-hunting/)».
+- «[Like Telegram](https://63e6906e719cbf0007ea809e--spontaneous-daffodil-706ad8.netlify.app/src/pages/sign-up/sign-up.html)»,
