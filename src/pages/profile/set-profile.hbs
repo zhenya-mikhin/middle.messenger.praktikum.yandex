@@ -1,0 +1,27 @@
+{{!< layout}}
+
+<link rel="stylesheet" href="./profile.scss">
+<section class="profile-body">
+	<button class="back-button">
+		<div>
+			<svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect y="5.19995" width="11" height="1.6" fill="white"/>
+				<path d="M7 1L11 6L7 11" stroke="white" stroke-width="1.6"/>
+			</svg>
+		</div>
+	</button>
+	<header>
+		<div class="profile-avatar">
+			<img src="../../assets/svg/avatar-plug.svg" alt="аватар">
+		</div>
+	</header>
+	<form class="profile-form">
+		{{> profile-input/profile-input type="email" placeholder="Почта" value="pochta@yandex.ru" }}
+		{{> profile-input/profile-input type="login" placeholder="Логин" value="ivanivanov" }}
+		{{> profile-input/profile-input type="text" placeholder="Имя" value="Иван" }}
+		{{> profile-input/profile-input type="text" placeholder="Фамилия" value="Иванов" }}
+		{{> profile-input/profile-input type="text" placeholder="Имя в чате" value="Иван" }}
+		{{> profile-input/profile-input type="tel" placeholder="Телефон" value="+79099673030" }}
+	</form>
+	{{> button/button text="Сохранить" mode="save" }}
+</section>
